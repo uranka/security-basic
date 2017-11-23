@@ -7,7 +7,7 @@
 <body>
 
 <c:if test="${param.error != null}" >
-Failed to login
+Failed to login. ${error}
     <c:if test="${SPRING_SECURITY_LAST_EXCEPTION != null}">
         Reason: <c:out value="${SPRING_SECURITY_LAST_EXCEPTION.message}"/>
     </c:if>
