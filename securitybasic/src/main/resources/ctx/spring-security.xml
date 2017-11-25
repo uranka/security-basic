@@ -13,10 +13,12 @@
         <form-login
             login-page="/login/form"
             login-processing-url="/login"
+            default-target-url="/welcome"
             username-parameter="username"
             password-parameter="password"
             authentication-failure-url="/login/form?error"/>
         <logout
+            logout-url="/logout"
             logout-success-url="/login/form?logout"/>
         <!-- enable csrf protection -->
         <csrf/>
